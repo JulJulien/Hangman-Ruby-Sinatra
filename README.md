@@ -1,33 +1,28 @@
-Hangperson: a scaffolded (!) ESaaS getting-started assignment
+Hangman: a scaffolded (!) Software As A Service
 =============================================================
 
-(v1.1, September 2015.  Written by Armando Fox and Nick Herson)
-(some edits by mverdicchio 21 September 2015)
-(refinements by Armando Fox September 2017)
+This project demonstrates the basic cycle of SaaS development in a disciplined way.
 
-In this assignment you'll be introduced to part of the basic cycle of creating SaaS in a disciplined way.
-
-Learning Goals
+What we Accomplished
 --------------
-After completing this assignment, you will be able to:
-
-* Create and deploy simple SaaS apps in your development environment, and deploy them to the public cloud
+* Created and deploy simple SaaS apps in your development environment, and deploy them to the public cloud
 * Practice the basic workflow of test-driven development (TDD), in which tests are written before the code (so they fail when first run) and code is then added to make them pass
 * Understand how SaaS frameworks such as Sinatra support the conceptual components of a three-tier SaaS application architecture
 * Understand the challenges of adapting a non-SaaS application to a SaaS environment, including how to identify and manage application state
 * Understand one use case of service-oriented architecture, in which your SaaS app relies on an external service's API (application programming interface) to provide part of the SaaS app's functionality.
 
-Prerequisites
--------------
-* You should be familiar with Ruby basics, for example by completing the Ruby Intro or Ruby Calisthenics assignment.
-* You should have read [ESaaS](http://www.saasbook.info) Chapter 2, "The Architecture of SaaS Applications", and watched the accompanying videos in the [MOOC](http://www.saas-class.org).
-* You should be comfortable with basic Git usage and how to push your code to GitHub, as described in Appendix A of [ESaaS](http://www.saasbook.info).
-* You will need "survival level" Unix command-line skills and facility with an editor to edit code files.
+Skills Required and References
+-------------------------------
+* Profficient in the Ruby Programming Language
+* Usage of automated testing with cucumber
+* Usage of Git, pushing code to GitHub (http://www.saasbook.info)
+* Basic Unix command-line skills and facility with an editor to edit code files
+* [ESaaS](http://www.saasbook.info) Chapter 2, "The Architecture of SaaS Applications"
+* [MOOC](http://www.saas-class.org).
 
-**NOTE: You may find the [Sinatra documentation](https://sinatrarb.com) helpful to have on hand.**
 
-Introduction
-------------
+Development Proccess
+--------------------
 The full Agile/XP cycle we follow in ESaaS includes talking to the customer, using BDD to develop scenarios, turning those scenarios into runnable integration/acceptance tests with Cucumber, using those scenarios plus TDD to drive the creation of actual code, and deploying the result of each iteration's work to the cloud.
 
 In this introductory assignment, we've provided RSpec unit tests to let you use TDD to develop game logic for the popular word-guessing game Hangman.  In the full Agile/XP cycle, you'd develop these tests yourself as you code.
@@ -36,9 +31,6 @@ You'll then use the Sinatra framework to make the Hangman game available as SaaS
 
 You'll deploy your game to the cloud using Render, giving you experience in automating SaaS deployment.
 
-**Why Sinatra?** 
-
-This assignment uses the simple [Sinatra](https://github.com/sinatra/sinatra) framework rather than Rails, so that you can focus on tools, mechanics, and SaaS concepts, all of which will readily map to Rails later.  Since our app doesn't have a database and has very few functions, Sinatra is an easy way to get started.
 
 **Before you get started**
 
